@@ -2,7 +2,35 @@
 ```Module 5 Challenge:``` Pymaceuticals, Inc. Capomulin Clinical Study
 
 # Project Overview
-This challenge is associated with Module 5 of UofT's 2022-2023 Data Analytics Bootcamp. In this challenge,
+This challenge is associated with ```Module 5``` of **UofT's 2022-2023 Data Analytics Bootcamp**. This challenge was concerned with **Pymaceuticals, Inc.**, a new pharmaceutical company that specializes in anti-cancer medications, and its most recent animal study. In this study, 249 mice who were identified with squamous cell carcinoma (SCC) tumors received treatment with a range of drug regimens. Over the course of 45 days, tumor development was observed and measured. The purpose of this study was to compare the performance of Pymaceuticals’ drug of interest, Capomulin, against the other treatment regimens.
+In this repository, the code that generated all of the tables and figures required for the technical report of the clinical study may be found. To generate the code, ```Python``` and the following ```Python libraries``` were implemented: ```pandas```, ```NumPy```, ```matplotlib.pyplot```, and ```scipy.stats```.
+
+# Project Breakdown
+This challenge was broken down into the following tasks:
+- Preparing the data;
+- Generating the summary statistics;
+- Creating bar charts and pie charts;
+- Calculating quartiles, finding outliers, and creating a box plot;
+- Creating a line plot and a scatter plot; and
+- Calculating the correlation and running a linear regression model.
+
+### Preparing the Data
+In this section of the challenge, the provided package dependency and data imports were run, and the ```mouse_metadata``` and ```study_results``` DataFrames were merged into a single DataFrame to simplify the subsquent analysis. Additionally, the number of unique mice IDs in the data was displayed, and any mouse ID with duplicate time points was identified. The data associated with that mouse ID was displayed, and a new DataFrame was created where the duplicate data was removed. This cleaned DataFrame was used for the remaining steps.
+
+### Generating the Summary Statistics
+In this section, a DataFrame housing summary statistics was created. The summary statistics computed and included were: a row for each drug regimen (regimen names were contained in the index column); and a column for each of the following statistics: ```mean```, ```median```, ```variance```, ```standard deviation```, and ```SEM``` of the tumor volume.
+
+### Creating Bar Charts and Pie Charts
+In this section, two bar charts were generated. Both charts were identical and showed the total number of timepoints for all mice tested for each drug regimen throughout the study. The difference between the two bar plots were in the ways in which they were produced. Moreover, the first bar chart was produced with the pandas ```DataFrame.plot()``` method, whereas the second bar chart was created with Matplotlib's ```pyplot``` methods. In addition, two pie charts were generated. Similarly, both charts were identical and showed the distribution of female versus male mice tested in the study. The difference between the two pie charts were in the ways in which they were produced. Moreover, the first pie chart was created with the Pandas ```DataFrame.plot()``` method, whereas the second pie chart was produced with Matplotlib's ```pyplot``` methods.
+
+### Calculating Quartiles, Finding Outliers, and Creating a Box Plot
+In this section, the final tumor volume of each mouse across four of the most promising treatment regimens: ```Capomulin```, ```Ramicane```, ```Infubinol```, and ```Ceftamin```, was computed. Then, the quartiles and IQR were calculated, and it was determined if there were any potential outliers across all four treatment regimens. Additionally, using ```Matplotlib```, a box plot that showed the distribution of the final tumor volume for all the mice in each treatment group was created. All four box plots were contained within the same figure.
+
+### Creating a Line Plot and a Scatter Plot
+In this section, a mouse that was treated with Capomulin was selected, and a line plot of tumor volume versus time point for that mouse was generated. Additionally, a scatter plot of tumor volume versus mouse weight for the Capomulin treatment regimen was produced.
+
+### Calculating Correlation and Regression
+In this section of code, the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment was compued. Subsequently, the linear regression model was plotted on top of the previous scatter plot generated.
 
 
 # References
