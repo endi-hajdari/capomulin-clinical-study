@@ -7,6 +7,8 @@ This challenge is associated with ```Module 5``` of **UofT's 2022-2023 Data Anal
 # Repository Structure and Breakdown
 In this repository, the code that generated all of the tables and figures required for the technical report of the clinical study may be found. The Jupyter notebook that contains the code is titled ```capomulin_clinical_study_analysis```. To generate the code, ```Python``` and the following ```Python libraries``` were implemented: ```pandas```, ```NumPy```, ```matplotlib.pyplot```, and ```scipy.stats```. The two ```CSV``` data files used for this analysis may also be found in this repository. They are titled ```mouse_metadata``` and ```study_results```.
 
+**Important Note:** The hyperlinks in the ```Table of Contents``` section of the script do not work unless the ```ipynb``` file is downloaded and opened using Visual Studio Code.
+
 # Project Breakdown
 This challenge was broken down into the following tasks:
 - Preparing the data;
